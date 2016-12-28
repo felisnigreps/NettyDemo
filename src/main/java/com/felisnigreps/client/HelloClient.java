@@ -21,6 +21,7 @@ public class HelloClient {
 
 
     public static void main(String[] args) throws IOException {
+
         EventLoopGroup loopGroup = new NioEventLoopGroup();
         Bootstrap b = new Bootstrap();
         b.group(loopGroup).channel(NioSocketChannel.class).handler(new HelloClientInitializer());

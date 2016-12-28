@@ -25,6 +25,7 @@ public class HelloServerInitializer extends ChannelInitializer<SocketChannel> {
 
         //自定义的handler
         pipeline.addLast("handler", new HelloServerHandler());
+        System.out.println(pipeline.toString());
 
 
     }
